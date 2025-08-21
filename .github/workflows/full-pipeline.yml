@@ -109,7 +109,7 @@ jobs:
 
       - name: Update kubeconfig
         run: |
-          aws eks update-kubeconfig --name my-cluster --region us-east-1
+          aws eks update-kubeconfig --name otel-cluster --region us-east-1
 
       - name: Deploy to EKS
         run: |
