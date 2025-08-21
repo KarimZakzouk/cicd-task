@@ -23,6 +23,9 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: Verify Python version
+        run: python --version
+
       - name: Run tests
         run: |
           pytest --cov=app --cov-report=xml
